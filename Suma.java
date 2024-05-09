@@ -1,8 +1,9 @@
 public class Suma{
-    private int a,b,resultado;
-    public int sumar(){
-    resultado = this.a + this.b;
-    return resultado;
+    private int a,b,resultado; // Definición de variables de instancia para los números a sumar y el resultado.
+
+    public int sumar(){ // Método para sumar los números a y b.
+        resultado = this.a + this.b; // Realiza la suma y guarda el resultado en la variable de instancia resultado.
+        return resultado; // Devuelve el resultado de la suma.
     }
 
     public int getA() {
@@ -29,8 +30,10 @@ public class Suma{
         this.resultado = resultado;
     }
 
+    // Metodos getters y setters
+
     @Override
-    public String toString() {
-        return "Suma [a=" + a + ", b=" + b + ", resultado=" + resultado + "]";
+    public String toString() { // Método toString para representar el objeto Suma como una cadena de texto.
+        return "Suma [a=" + a + ", b=" + b + ", resultado=" + resultado + "]"; // Devuelve una cadena con los valores de a, b y resultado.
     }
 }
